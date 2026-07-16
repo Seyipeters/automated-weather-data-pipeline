@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_weather_observations
+    description: "Flattened staging model for raw weather API observations from Open-Meteo."
+
+    columns:
+      - name: city
+        description: "City where the weather observation was collected."
+        data_tests:
+          - not_null
+
+      - name: country
+        description: "Country of the city."
+        data_tests:
+          - not_null
+
+      - name: observation_time
+        description: "Hourly weather observation timestamp from the API."
+        data_tests:
+          - not_null
+
+      - name: temperature_2m
+        description: "Air temperature measured at 2 meters above ground."
+        data_tests:
+          - not_null
+
+      - name: relative_humidity_2m
+        description: "Relative humidity measured at 2 meters above ground."
+        data_tests:
+          - not_null
+
+      - name: precipitation
+        description: "Hourly precipitation amount."
+        data_tests:
+          - not_null
+
+      - name: wind_speed_10m
+        description: "Wind speed measured at 10 meters above ground."
+        data_tests:
+          - not_null
+
+      - name: source_file
+        description: "S3 source file where the record came from."
+        data_tests:
+          - not_null
+
+      - name: loaded_at
+        description: "Timestamp when the raw JSON file was loaded into Snowflake."
+        data_tests:
+          - not_null

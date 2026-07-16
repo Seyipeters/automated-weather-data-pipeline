@@ -1,0 +1,14 @@
+version: 2
+
+data_tests:
+  - name: valid_humidity_range
+    description: "Checks that relative humidity values are between 0 and 100 percent."
+
+  - name: no_negative_precipitation
+    description: "Checks that validated weather observations do not contain negative precipitation values."
+
+  - name: no_negative_wind_speed
+    description: "Checks that validated weather observations do not contain negative wind speed values."
+
+  - name: no_null_daily_weather_summary_metrics
+    description: "Checks that the daily weather summary mart does not contain null reporting metrics."

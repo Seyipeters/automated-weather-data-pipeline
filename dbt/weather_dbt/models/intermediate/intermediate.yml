@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: int_valid_weather_observations
+    description: "Intermediate model containing only valid weather observations used for business reporting."
+
+    columns:
+      - name: city
+        description: "City where the weather observation was collected."
+        data_tests:
+          - not_null
+
+      - name: observation_time
+        description: "Hourly weather observation timestamp."
+        data_tests:
+          - not_null
+
+      - name: temperature_2m
+        description: "Validated air temperature at 2 meters."
+        data_tests:
+          - not_null
+
+      - name: relative_humidity_2m
+        description: "Validated relative humidity."
+        data_tests:
+          - not_null
+
+      - name: precipitation
+        description: "Validated precipitation amount."
+        data_tests:
+          - not_null
+
+      - name: wind_speed_10m
+        description: "Validated wind speed."
+        data_tests:
+          - not_null
+
+  - name: int_bad_weather_observations
+    description: "Audit model containing rejected or suspicious weather records with an issue type."
+
+    columns:
+      - name: issue_type
+        description: "Reason why the record was flagged as invalid or suspicious."
+        data_tests:
+          - not_null

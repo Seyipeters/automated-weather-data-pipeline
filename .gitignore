@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment secrets
+.env
+.env.*
+
+# Keep example env file
+!.env.example
+
+# Raw local data
+data/raw/*.json
+data/raw/*.csv
+data/raw/*.parquet
+
+# OS/editor
+.DS_Store
+.vscode/
+.env
+.env.*
+!.env.example
+.venv/
+data/raw/*.json
+dbt/weather_dbt/target/
+dbt/weather_dbt/dbt_packages/
+dbt/weather_dbt/logs/
