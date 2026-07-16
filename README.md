@@ -110,31 +110,26 @@ Power BI connects to this dbt-created mart instead of raw JSON tables.
 
 ---
 
-## Screenshots
+## Screenshots<img width="943" height="550" alt="stg_weather_observations" src="https://github.com/user-attachments/assets/3f97a9ba-261c-490c-87c4-42c2fac60afd" />
 
-### S3 Raw Weather Files
-
-![S3 Raw Weather Files](screenshots/02_s3_raw_weather_files.png)
-
-### Snowflake RAW Table
-
-![Snowflake RAW Weather Observations](screenshots/03_snowflake_raw_weather_observations.png)
 
 ### dbt Docs Overview
 
-![dbt Docs Overview](screenshots/04_dbt_docs_overview.png)
+![Uploading stg_weather_observations.png…]()
 
 ### dbt Lineage Graph
 
-![dbt Lineage Graph](screenshots/05_dbt_lineage_graph.png)
+<img width="929" height="514" alt="lineage_graph" src="https://github.com/user-attachments/assets/5a1a6497-4b92-41cf-a2e3-3f8f446807a8" />
+
 
 ### Weather Mart
 
-![Weather Mart](screenshots/08_mart_daily_weather_summary.png)
+<img width="945" height="529" alt="mart_daily_weather_summary" src="https://github.com/user-attachments/assets/4758c315-a89f-4047-86b7-1e6ad2610d57" />
 
-### dbt Tests Passed
 
-![dbt Tests Passed](screenshots/09_dbt_tests_passed.png)
+### Int Valid Weather Observations
+<img width="947" height="531" alt="int_valid_weather_observations" src="https://github.com/user-attachments/assets/9932aa3c-f0d5-47d3-a0c0-e99533fc5c3f" />
+
 
 ---
 
