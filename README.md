@@ -107,6 +107,8 @@ It provides daily weather metrics by city:
 - Average wind speed
 
 Power BI connects to this dbt-created mart instead of raw JSON tables.
+<img width="705" height="395" alt="Weather Analytics Dashboard" src="https://github.com/user-attachments/assets/5a0ae02f-697e-4cf5-ac67-ac68c0d79c7a" />
+
 
 ---
 
